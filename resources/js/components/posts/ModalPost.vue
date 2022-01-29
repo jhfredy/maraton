@@ -82,7 +82,6 @@ export default{
                 this.title = value ? value.title : '';
                 this.description = value ? value.description : ''
                 this.titleLabel = value ? 'Editar Usuario' : 'Crear Usuario'
-                console.log(value)
             },
             immediate:true
         }
