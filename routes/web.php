@@ -22,3 +22,5 @@ Route::get('/dashboard', function () {
 })->middleware(['auth','verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/posts',[\App\Http\Controllers\PostController::class,'index'])->name('post.index');
